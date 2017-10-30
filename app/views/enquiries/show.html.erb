@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @enquiry.title %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @enquiry.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @enquiry.date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @enquiry.status %>
+</p>
+
+<p>
+  <strong>Location preference:</strong>
+  <%= @enquiry.location_preference %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @enquiry.link %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @enquiry.area_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @enquiry.category_id %>
+</p>
+
+<%= link_to 'Edit', edit_enquiry_path(@enquiry) %> |
+<%= link_to 'Back', enquiries_path %>

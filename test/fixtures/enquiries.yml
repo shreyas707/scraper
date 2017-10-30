@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  name: MyString
+  date: 2017-09-07
+  status: MyString
+  location_preference: MyString
+  link: MyString
+  area_id: 1
+  category_id: 1
+
+two:
+  title: MyString
+  name: MyString
+  date: 2017-09-07
+  status: MyString
+  location_preference: MyString
+  link: MyString
+  area_id: 1
+  category_id: 1

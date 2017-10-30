@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Enquiries</h1>
+
+<table class="table table-striped" id="dataTable">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Status</th>
+      <th>Location preference</th>
+      <th>Link</th>
+      <th>Area</th>
+      <th>Category</th>
+      <th>Show</th>
+      <th>Edit</th>
+      <th>Destroy</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enquiries.each do |enquiry| %>
+      <tr>
+        <td><%= enquiry.title %></td>
+        <td><%= enquiry.name %></td>
+        <td><%= enquiry.date %></td>
+        <td><%= enquiry.status %></td>
+        <td><%= enquiry.location_preference %></td>
+        <td><%= enquiry.link %></td>
+        <td><%= enquiry.area.name %></td>
+        <td><%= enquiry.category.name %></td>
+        <td><%= link_to 'Show', enquiry %></td>
+        <td><%= link_to 'Edit', edit_enquiry_path(enquiry) %></td>
+        <td><%= link_to 'Destroy', enquiry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Enquiry', new_enquiry_path %>
